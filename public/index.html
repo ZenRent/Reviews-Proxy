@@ -2,19 +2,36 @@
 
 <head>
   <title>ZenRent - Booking Made Simple </title>
+  <link href="styles.css" rel="stylesheet">
   <link rel="stylesheet" href="http://localhost:1000/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="Gallery"></div>
-  <div id="portal-root"></div>
-  <div id="portal-save"></div>
-  <div id="Reviews"></div>
-  <div id="MorePlaces"></div>
+  <div class="proxy-global-galleryContainer">
+    <div id="Gallery"></div>
+    <div id="portal-root"></div>
+    <div id="portal-save"></div>
+  </div>
+
   <!-- ERROL -->
-  <div id="Reservation"></div>
+  <div class="proxy-global-listingDetailAndReservationOuterContainer">
+    <div class="proxy-global-listingDetailAndReservationInnerContainer">
+      <div class="proxy-global-listingDetailContainer">
+        <img src="listingDetail.png" class="proxy-global-listingDetail" />
+      </div>
+      <div class="proxy-global-reservationContainer" id="Reservation"></div>
+    </div>
+  </div>
+  <div id="Reviews"></div>
+  <div class="proxy-global-locationHostThingsContainer">
+    <img src="locationHostThings.png" class="proxy-global-locationHostThings" />
+  </div>
+  <div id="MorePlaces"></div>
+  <div class="proxy-global-thingsExploreFooterContainer">
+    <img src="thingsExploreFooter.png" class="proxy-global-thingsExploreFooter" />
+  </div>
 
   <!-- <div id="reservation"></div>
   <div id="gallery"></div>
