@@ -9,7 +9,7 @@ app.use(cors())
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-app.use('/reviews', createProxyMiddleware({ target: `http://localhost:3003`, changeOrigin: true }));
+app.use('/reviews', createProxyMiddleware({ target: `http://localhost:8003`, changeOrigin: true }));
 app.use('/api/more', createProxyMiddleware({ target: `http://localhost:3004`, changeOrigin: true }));
 app.use('/api/galleries', createProxyMiddleware({ target: `http://localhost:3001`, changeOrigin: true }));
 
